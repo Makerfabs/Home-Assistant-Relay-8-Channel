@@ -1,0 +1,62 @@
+#wifi:
+#  ssid: !secret wifi_ssid
+#  password: !secret wifi_password
+#
+#  # Enable fallback hotspot (captive portal) in case wifi connection fails
+#  ap:
+#    ssid: "Lan-Test Fallback Hotspot"
+#    password: "iIyQw5iezIFm"
+
+#captive_portal:
+
+
+# Makerfabs Config
+# ethernet:
+#   type: LAN8720
+#   mdc_pin: 23
+#   mdio_pin: 18
+#   clk_mode: GPIO17_OUT
+#   phy_addr: 0
+
+
+switch:
+  - platform: gpio
+    pin: 32
+    name: "Relay #1"
+    inverted: true
+
+  - platform: gpio
+    pin: 33
+    name: "Relay #2"
+    inverted: true
+
+  - platform: gpio
+    pin: 14
+    name: "Relay #3"
+    inverted: true
+
+  - platform: gpio
+    pin: 13
+    name: "Relay #4"
+    inverted: true
+
+  - platform: gpio
+    pin: 15
+    name: "Relay #5"
+    inverted: true
+
+  - platform: gpio
+    pin: 4
+    name: "Relay #6"
+    inverted: true
+
+  - platform: gpio
+    pin: 16
+    name: "Relay #7"
+    inverted: true
+
+  - platform: gpio
+    pin: 5
+    name: "Relay #8"
+    inverted: true
+
