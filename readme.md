@@ -19,9 +19,9 @@ Note:
 [Makerfabs Wiki](https://wiki.makerfabs.com/)
 
 ## Intruduce
-Product Link: [8 channel Relay for Home Assistant](https://www.makerfabs.com/8-channel-relay-for-home-assistant.html)
+[Product Link](https://www.makerfabs.com/8-channel-relay-for-home-assistant.html)
 
-Wiki Link :
+[Wiki Link](https://wiki.makerfabs.com/How-to-use-Home-Assistant-Relay-8-Channel.html)
 
 We all like home assistants, which make “IOT” easy for common users, Makerfabs 8 channel relay for Home assistant station is based on home assistant ESPhome, for quick implementation of your smart home.
 ESPHome is an open-source project to help you customize smart home solutions based on popular ESP32/ESP8266 boards. ESPHome natively integrates with Home Assistant. It reads in a YAML configuration file and creates custom firmware which it installs on your ESP device. Devices or sensors added in ESPHome’s configuration will automatically show up in Home Assistant’s UI.
