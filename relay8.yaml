@@ -1,14 +1,35 @@
-#wifi:
-#  ssid: !secret wifi_ssid
-#  password: !secret wifi_password
-#
-#  # Enable fallback hotspot (captive portal) in case wifi connection fails
-#  ap:
-#    ssid: "Lan-Test Fallback Hotspot"
-#    password: "iIyQw5iezIFm"
+esphome:
+  name: ha-realy-8-channel
+  friendly_name: HA-Realy-8-Channel
 
-#captive_portal:
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+    # version: 5.4.2
 
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "4736wQaHqR861N+SH4cfu1iZnZg7wdQnHi5XrR+IEGI="
+
+ota:
+  - platform: esphome
+    password: "b658666dd5a895fb409dccbe42d907d4"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ha-Realy-8-Channel"
+    password: "uAvICC3ON1lS"
+
+captive_portal:
 
 # Makerfabs Config
 # ethernet:
@@ -17,7 +38,9 @@
 #   mdio_pin: 18
 #   clk_mode: GPIO17_OUT
 #   phy_addr: 0
-
+    
+web_server:
+  port: 80
 
 switch:
   - platform: gpio
@@ -59,4 +82,3 @@ switch:
     pin: 5
     name: "Relay #8"
     inverted: true
-
